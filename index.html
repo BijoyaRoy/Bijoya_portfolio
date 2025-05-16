@@ -120,5 +120,27 @@
             loop: true
         });
     </script>
+
+    <script>
+        // Get current page path
+        const currentPath = window.location.pathname;
+      
+        // Highlight matching nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+          const linkPath = new URL(link.href).pathname;
+          if (linkPath === currentPath) {
+            link.classList.add('active-link');
+          }
+        });
+      </script>
+      
+
+    <script>
+        if (window.performance) {
+          if (performance.navigation.type === 1 || performance.getEntriesByType("navigation")[0]?.type === "reload") {
+            window.location.href = "index.html"; // Redirect to homepage on reload
+          }
+        }
+      </script>
 </body>
 </html>
