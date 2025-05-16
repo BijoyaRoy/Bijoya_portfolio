@@ -1,0 +1,144 @@
+* {
+    margin: 60;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: rgb(4, 4, 32);
+    background-image: url('transparent.png');
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 80px;   
+}
+
+/* Add this below your other CSS */
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: rgba(20, 20, 62, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    height: 100%;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.left {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(157, 104, 206);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#element {
+    color: rgb(157, 104, 206);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links li a:hover {
+    color: rgb(157, 104, 206);
+    transform: scale(1.05);
+}
+
+
+
+
+.container {
+    background-color: rgb(20, 20, 62);
+    background-image: url('square3.webp');
+    padding: 20px;
+    margin: 20px;
+    margin-left: -5px; 
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    /* margin-left: -10px; */
+    border: 2px solid rgb(157, 104, 206);
+}
+
+.title {
+    text-align: center;
+    /* padding: 10px; */
+    /* margin: 10px; */
+    margin-right: -5px;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.title:hover{
+    color: rgb(157, 104, 206);
+    transform: translate(-5px) scale(1.1);
+}
+
+.skill-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skill-section h2 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.skill-section p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    /* gap: 20px; */
+    word-spacing: 35px;
+    height: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+main hr {
+    border: 0;
+    background: rgb(157, 104, 206);
+    height: 1.6px;
+    margin: 20px 30px;
+}
+
+.nav-link.active-link {
+    /* background-color: #a362d4; */
+    color:rgb(157, 104, 206);
+  }
+  

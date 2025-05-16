@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="shortcut icon" href="/favicon1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="skills1.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                 <nav class="navbar">
+                     <div class="left">
+                        <span id="element"></span>
+                     </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="aboutme.html" class="nav-link">Introduction</a></li>
+                    <li><a href="experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="skills1.html" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Project</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+    
+    <main>
+        <div>
+            <h1 class="title">Skills & Hobbies</h1>
+            <div class="container">
+                <div class="skill-section">
+                    <div style="height: 10px;"></div>
+                    <h2>Programming Languages</h2>
+                    <p style="word-spacing: 20px;">C++&nbsp; C &nbsp;Python</p>
+                    <div class="logo">
+                        <img src="c++.png" alt="C++" width="50" height="51">
+                        <img src="c.png" alt="c" width="40" height="47">
+                        <img src="python.png" alt="python" width="40" height="47">
+                    </div>
+                </div>
+                <div style="height: 10px;"></div>
+                <hr>
+
+                <div style="height: 10px;"></div>
+                <div class="skill-section">
+                    <h2>Web Development</h2>
+                    <p>HTML CSS</p>
+                    <div class="logo">
+                        <img src="html.png" alt="HTML" width="60" height="40">
+                        <img src="css.png" alt="CSS" width="40" height="40">
+                    </div>
+                </div>
+                <div style="height: 10px;"></div>
+                <hr>
+
+                <div style="height: 10px;"></div>
+                <div class="skill-section">
+                    <div class="skill-section">
+                        <h2>Documentation & Design</h2>
+                        <p>LaTeX Canva</p>
+                        <div class="logo">
+                            <img src="overfeaf.png" alt="LaTeX Logo" width="40" height="40">
+                            <img src="canva.png" alt="Canva Logo" width="60" height="35">
+                        </div>
+                    </div>
+                    <div style="height: 10px;"></div>
+                    <hr>
+
+                    <div style="height: 10px;"></div>
+                    <div class="skill-section">
+                        <h2>Languages</h2>
+                        <p style="word-spacing: 4px;">English, Hindi, Assamese, Koch Rajbongshi</p>
+                    </div>
+                    <div style="height: 10px;"></div>
+                    <hr>
+
+                    <div style="height: 10px;"></div>
+                    <div class="skill-section">
+                        <h2>Other Skills & Hobbies</h2>
+                        <p style="word-spacing: 4px;">Active Listening, Friendly Attitude, Hardworking, Sketching,
+                            Playing Guitar</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Bijoya\'s portfolio'],
+            typeSpeed: 80,
+            backSpeed: 50, // optional, controls speed of deleting
+            loop: true
+        });
+    </script>
+
+    <script>
+        // Get current page path
+        const currentPath = window.location.pathname;
+      
+        // Highlight matching nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+          const linkPath = new URL(link.href).pathname;
+          if (linkPath === currentPath) {
+            link.classList.add('active-link');
+          }
+        });
+      </script>
+      
+
+    <script>
+        if (window.performance) {
+          if (performance.navigation.type === 1 || performance.getEntriesByType("navigation")[0]?.type === "reload") {
+            window.location.href = "index.html"; // Redirect to homepage on reload
+          }
+        }
+    </script>
+      
+</body>
+</html>

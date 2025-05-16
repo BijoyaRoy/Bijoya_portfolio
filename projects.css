@@ -1,0 +1,112 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color:rgb(4, 4, 32);
+    background-image: url('transparent.png');
+    padding-top: 80px;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 62, 0.95);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0px 40px;
+}
+
+.left {
+    font-size: 1.2rem;
+    display: flex;  
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links li a:hover {
+    color: rgb(157, 104, 206);
+    transform: scale(1.05);
+}
+
+.projects-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.projects-section h1 {
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    color: white;
+}
+
+.project-card {
+    border: 2px solid  rgb(157, 104, 206);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(20, 20, 62);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-section h1:hover{
+    color: rgb(157, 104, 206);
+    transform: translate(-5px) scale(1.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 0 20px rgb(157, 104, 206);
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.project-card h3 {
+
+    color: rgb(157, 104, 206);
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    text-align: justify;
+    color: white;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.nav-link.active-link {
+    /* background-color: #a362d4; */
+    color:rgb(157, 104, 206);
+  }
+
+  #element {
+    color: rgb(157, 104, 206);
+
+}
+  

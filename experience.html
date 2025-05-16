@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="shortcut icon" href="/favicon1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="experience.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="left">
+              <span id="element"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="aboutme.html" class="nav-link">Introduction</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="skills1.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <div class="container">
+
+        <h1 class="title">Experience</h1>
+        <hr class="hr-first">
+
+        <div class="skill-section">
+            <h2>Internship :</h2>
+            <h3>Internship at NIELIT Guwahati | 3rd June 2024 - 3rd july 2024</h3>
+
+            <p>
+                I developed a solid foundational understanding of key cybersecurity concepts, including network security, encryption, and threat analysis. This gave me insight into how systems are protected and how attackers try to exploit weaknesses. I also focused on specific web application vulnerabilities, such as Cross-Site Scripting (XSS), where I learned to identify the risks that come from attackers injecting malicious scripts into websites, potentially compromising user data or site functionality. Additionally, I studied SQL injection attacks—understanding how malicious inputs can manipulate databases—and explored effective techniques to detect and prevent these vulnerabilities. Alongside this, I gained knowledge of cryptography, learning how encryption works to secure information by converting it into unreadable formats for unauthorized users. This helped me appreciate how data privacy and integrity are maintained in communication and storage. Overall, I developed a well-rounded awareness of common cybersecurity risks, attacks, and the fundamental role cryptography plays in protecting digital systems.
+            </p>
+            <br>
+            <div class="skill-section1">
+                <h3>Projects :</h3>
+                <p>Project Domain : Cybersecurity</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Bijoya\'s portfolio'],
+            typeSpeed: 80,
+            backSpeed: 50, // optional, controls speed of deleting
+            loop: true
+        });
+    </script>
+
+
+<script>
+    // Get current page path
+    const currentPath = window.location.pathname;
+  
+    // Highlight matching nav link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      const linkPath = new URL(link.href).pathname;
+      if (linkPath === currentPath) {
+        link.classList.add('active-link');
+      }
+    });
+  </script>
+  
+
+<script>
+    if (window.performance) {
+      if (performance.navigation.type === 1 || performance.getEntriesByType("navigation")[0]?.type === "reload") {
+        window.location.href = "index.html";
+      }
+    }
+</script>
+  
+</body>
+</html>

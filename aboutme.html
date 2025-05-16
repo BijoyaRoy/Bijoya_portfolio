@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="shortcut icon" href="/favicon1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="aboutme.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+           <nav class="navbar">
+            <div class="left">
+              <span id="element"></span>
+            </div>
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="aboutme.html" class="nav-link">Introduction</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="skills1.html" class="nav-link">Skills</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+    <main>
+        <div class="about-box">
+            <div>
+                <img src="bijoya.jpg" alt="bijoya">
+            </div>
+            <div class="about-content" >
+            <h1>About Me</h1>
+            <p>I am a final-year Computer Science and Engineering student at the Central Institute of Technology,
+                Kokrajhar,
+                with a strong interest in web development. My core skills include HTML, CSS, JavaScript, and responsive
+                web
+                design, which I have applied in building functional and visually appealing websites.
+
+                In addition to frontend development, I have worked on projects in diverse domains including Blockchain
+                and
+                Machine Learning, allowing me to develop a broader technical perspective and problem-solving approach.
+                These
+                experiences have enhanced my ability to adapt to new technologies and integrate them into practical
+                solutions.</p>
+                </div>
+        </div>
+
+        <div class="education-box">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Bachelor of Technology in Computer Science and Engineering</strong><br>
+                    Central Institute of Technology, Kokrajhar<br>
+                    CGPA: 7.65 (till 7th sem) | 2022–2025
+                </li>
+
+                <hr>
+                <li>
+                    <strong>Diploma in Computer Science and Engineering</strong><br>
+                    Central Institute of Technology, Kokrajhar<br>
+                    CGPA: 8.36 | 2019–2022
+                </li>
+
+                <hr>
+                <li>
+                    <strong>10th (CBSE)</strong><br>
+                    Kendriya Vidyalaya, Kokrajhar<br>
+                    Percentage: 70.6 | 2019
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Bijoya\'s portfolio'],
+            typeSpeed: 80,
+            backSpeed: 50, // optional, controls speed of deleting
+            loop: true
+        });
+    </script>
+
+
+    <script>
+        // Get current page path
+        const currentPath = window.location.pathname;
+      
+        // Highlight matching nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+          const linkPath = new URL(link.href).pathname;
+          if (linkPath === currentPath) {
+            link.classList.add('active-link');
+          }
+        });
+      </script>
+      
+
+    <script>
+        if (window.performance) {
+          if (performance.navigation.type === 1 || performance.getEntriesByType("navigation")[0]?.type === "reload") {
+            window.location.href = "index.html"; // Redirect to homepage on reload
+          }
+        }
+      </script>
+      
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="shortcut icon" href="/favicon1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="projects.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <span id="element"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="aboutme.html" class="nav-link">Introduction</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="skills1.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+         <section class="projects-section">
+            <h1>My Projects</h1>
+
+            <div class="project-card">
+                <h3> Obesity Risk Prediction And Diet Planning</h3>
+                <div style="height: 10px;"></div>
+
+                <p>
+                    I worked on a team project with two other members to develop an Obesity Risk Prediction and Diet Recommendation System using machine learning. Our system was designed to predict an individual's obesity level by analyzing their physical data and lifestyle habits. Based on this prediction, the system then calculates the person’s required calorie intake and creates a personalized calorie-deficit diet plan tailored to help them manage their weight effectively. This project gave me hands-on experience in applying machine learning to real-life health challenges, while also emphasizing the importance of personalized solutions for better wellbeing.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3> Agriculture Supply Chain using Blockchain Technology</h3>
+                <div style="height: 10px;"></div>
+
+                <p> During my diploma, I worked with two teammates on a project to build an Agriculture Supply Chain system using blockchain technology. We created a smart contract that allows all participants in the supply chain to enter their data directly into the blockchain. This way, the information is securely stored and shared with everyone involved, making it transparent, unchangeable, and distributed across the network. The project helped me understand how blockchain can bring trust and clarity to complex systems like agriculture supply chains.
+
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3> AI/ML-Powered Health Insurance Premium Prediction Model & LLM-Based Policy Assistant Chatbot</h3>
+                <div style="height: 10px;"></div>
+
+                <p> This was a team project where we set out to build a health insurance premium prediction system using machine learning. Our main goal was to make the process more personalized and fair by predicting premiums based on a person's health profile, lifestyle, and other important factors, rather than using a one-size-fits-all approach. This way, insurers could better assess individual risk and even offer tailored preventive measures. To make the system easier for users to interact with, we also implemented a chatbot powered by a large language model (LLM). The chatbot helps answer policy-related questions and guides users in a friendly, conversational way. This project not only helped us apply machine learning in a meaningful real-world scenario but also showed how AI can improve both decision-making and user experience in the insurance sector.s.
+                    
+                </p>
+            </div>
+                </p>
+            </div>
+
+            <!-- <div class="project-card">
+                <h3>SQL Injection Mitigation</h3>
+                <p>Learned techniques to understand, detect, and mitigate SQL injection vulnerabilities.</p>
+            </div> -->
+        </section>
+    </main>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Bijoya\'s portfolio'],
+            typeSpeed: 80,
+            backSpeed: 50, // optional, controls speed of deleting
+            loop: true
+        });
+    </script>
+
+    <script>
+        // Get current page path
+        const currentPath = window.location.pathname;
+      
+        // Highlight matching nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+          const linkPath = new URL(link.href).pathname;
+          if (linkPath === currentPath) {
+            link.classList.add('active-link');
+          }
+        });
+      </script>
+
+    <script>
+        if (window.performance) {
+          if (performance.navigation.type === 1 || performance.getEntriesByType("navigation")[0]?.type === "reload") {
+            window.location.href = "index.html"; // Redirect to homepage on reload
+          }
+        }
+      </script>
+      
+</body>
+</html>

@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(4, 4, 32);
+    background-image: url('transparent.png');
+    color: #ffffff;
+    padding-top: 60px;
+}
+
+
+header {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 62, 0.95);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar {
+    height: 100%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.left {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#element {
+  color: rgb(157, 104, 206);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links li a:hover {
+    color: rgb(157, 104, 206);
+    transform: scale(1.05);
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 10px 50px;
+    padding: 30px 30px;
+}
+
+.title {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 3em;
+    font-weight: bold;
+    
+
+    /* text-align: center; */
+}
+
+hr.hr-first, hr.hr-second {
+    height: 2px;
+    /* Thin line */
+    width: 191%;
+    background-color: #a362d4;
+    border: none;
+    margin: 40px 40px;
+    margin-left: -80px;
+}
+
+.skill-section {
+    text-align: justify;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.2em;
+
+}
+
+.skill-section h3{
+    color: rgb(157, 104, 206);
+}
+
+.skill-section1 p {
+    text-align: justify;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px 9;
+    font-size: 1em;
+}
+
+.skill-section1 u{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(157, 104, 206);    
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    width: 150%;
+    padding: 5px 9;
+    font-size: 1em;
+}
+
+.nav-link.active-link {
+    /* background-color: #a362d4; */
+    color:rgb(157, 104, 206);
+  }
+  
